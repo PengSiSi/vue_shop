@@ -69,7 +69,7 @@ export default {
           name: '用户管理',
           subList: [
             {
-              id: '11',
+              id: 'user',
               name: '用户管理1'
             },
             {
@@ -87,12 +87,12 @@ export default {
           name: '权限控制',
           subList: [
             {
-              id: '12',
-              name: '权限控制1'
+              id: 'rights',
+              name: '权限列表'
             },
             {
-              id: '22',
-              name: '权限控制2'
+              id: 'roles',
+              name: '角色列表'
             },
             {
               id: '32',
@@ -102,10 +102,10 @@ export default {
         },
         {
           id: '3',
-          name: '哈哈哈',
+          name: '角色管理',
           subList: [
             {
-              id: '13',
+              id: 'roles',
               name: '哈哈哈1'
             },
             {

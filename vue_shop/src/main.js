@@ -8,7 +8,7 @@ import less from 'less'
 import {Form, FormItem, Input, Button, Select, Message, Container, Header,
         Aside, Main, Menu, MenuItem, Submenu, MenuItemGroup,
         Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn,
-        Tooltip, Switch, Pagination, Dialog} from 'element-ui'
+        Tooltip, Switch, Pagination, Dialog, Tag, Tree} from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.config.productionTip = false
@@ -38,6 +38,8 @@ Vue.use(Tooltip)
 Vue.use(Switch)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
 Vue.prototype.$message = Message
 
 /* eslint-disable no-new */
