@@ -10,9 +10,13 @@ import {Form, FormItem, Input, Button, Select, Message, Container, Header,
         Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn,
         Tooltip, Switch, Pagination, Dialog, Tag, Tree} from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import store from './store'
+import Antd from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
 
 Vue.config.productionTip = false
 
+Vue.use(Antd)
 Vue.use(less)
 Vue.use(Button)
 Vue.use(Select)
@@ -46,6 +50,7 @@ Vue.prototype.$message = Message
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

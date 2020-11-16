@@ -6,6 +6,8 @@ import Welcome from '../components/Welcome.vue'
 import User from '../components/User.vue'
 import Rights from '../components/Rights.vue'
 import Roles from '../components/Roles.vue'
+import VuexDemo from '../VuexDemo.vue'
+import VuexTest from '../Vuex_Test.vue'
 
 Vue.use(Router)
 
@@ -21,7 +23,9 @@ const router = new Router({
       {path: '/welcome', component: Welcome},
       {path: '/user', component: User},
       {path: '/rights', component: Rights},
-      {path: '/roles', component: Roles}
+      {path: '/roles', component: Roles},
+      {path: '/vuex', component: VuexDemo},
+      {path: '/vuex_demo', component: VuexTest}
     ]}
   ]
 })

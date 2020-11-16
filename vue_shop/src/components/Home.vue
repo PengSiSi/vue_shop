@@ -70,15 +70,15 @@ export default {
           subList: [
             {
               id: 'user',
-              name: '用户管理1'
+              name: '用户管理'
             },
             {
-              id: '21',
-              name: '用户管理2'
+              id: 'vuex',
+              name: 'Vuex基础学习'
             },
             {
-              id: '31',
-              name: '用户管理3'
+              id: 'vuex_demo',
+              name: 'vuex实战学习'
             }
           ]
         },
