@@ -16,8 +16,6 @@
         <el-menu
           default-active="2"
           class="el_menu"
-          @open="handleOpen"
-          @close="handleClose"
           background-color="#333741"
           text-color="#fff"
           active-text-color="#409eff"

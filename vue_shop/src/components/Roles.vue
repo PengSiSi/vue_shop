@@ -52,12 +52,7 @@
       </el-table>
     </el-card>
     <!-- 分配权限弹框 -->
-    <el-dialog
-      title="分配权限"
-      :visible.sync="dialogVisible"
-      width="50%"
-      :before-close="handleClose"
-    >
+    <el-dialog title="分配权限" :visible.sync="dialogVisible" width="50%">
       <el-tree
         :data="rightsData"
         :props="defaultProps"

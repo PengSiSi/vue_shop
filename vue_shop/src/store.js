@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
+import json from './assets/json/list.json'
 
 Vue.use(Vuex)
 
@@ -64,7 +65,7 @@ export default new Vuex.Store({
     clearDone(state) {
       state.list = state.list.findIndex(x => x.done === false)
     },
-    // tab切换
+
     changeViewKey(state, key) {
       state.viewKey = key
     }
@@ -78,10 +79,11 @@ export default new Vuex.Store({
       }, 1000)
     },
     getList(context) {
-      axios.post('./assets/json/list.json').then(({data}) => {
-        console.log(data)
-        context.commit('initList', data)
-      })
+      context.commit('initList', json)
+      // axios.get('./assets/json/list.json').then(({data}) => {
+      //   console.log(data)
+      //   context.commit('initList', data)
+      // })
     }
   },
   getters: {
